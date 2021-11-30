@@ -28,12 +28,17 @@ const getTodosById = (req, res) => {
   todoModel
     .find({ _id: id, user: req.token.id })
     .then((result) => {
-      res.status(200).json(result);
+      if (result) {
+        res.status(200).json(result);
+      } else {
+        res.status(404).json("todo does not exist");
+      }
     })
     .catch((err) => {
       res.status(400).json(err);
     });
 };
+
 
 const deleteTodo = (req, res) => {
   const { id } = req.params;
