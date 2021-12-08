@@ -1,5 +1,12 @@
 # W08D03
 
+## UML diagram
+<img src='https://i.ibb.co/m6kpvKK/Untitled-drawio.png' alt='img'/>
+
+## ER diagram
+<img src='https://raw.githubusercontent.com/Eyad911/w08d03/main/ER-Diagram.png' alt='img'/>
+
+
 ## About The Project
 
 Project "Todos/Login/Sign up" using hash password and token where only verified user can create/update/delete/seeUsers/seeTodos/deleteUser
